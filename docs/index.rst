@@ -1,132 +1,14 @@
 RSeries Lights Module
 ========================
 
-`Read the Docs`_ hosts documentation for the open source community.
-We support Sphinx_ docs written with reStructuredText_ and `CommonMark`_.
-We pull your code from your Subversion_, Bazaar_, Git_, and Mercurial_ repositories.
-Then we build documentation and host it for you.
-Think of it as *Continuous Documentation*.
+Logic Displays are the blinky lights in the rectangular openings of R2-D2's dome (2 front, 1 rear) that separate dead droids from the living.
 
-The code is open source, and `available on github`_.
+The RSeries Logic Engine combines Arduino, RGB LEDs and fiber-optics to accurately emulate the color-wheel logic display patterns seen in the original Star Wars trilogy. This is arguably the most screen-accurate logic display system since Return of The Jedi.
 
-.. _Read the docs: http://readthedocs.org/
-.. _Sphinx: http://sphinx.pocoo.org/
-.. _reStructuredText: http://sphinx.pocoo.org/rest.html
-.. _CommonMark: http://commonmark.org/
-.. _Markdown: http://daringfireball.net/projects/markdown/syntax
-.. _Subversion: http://subversion.tigris.org/
-.. _Bazaar: http://bazaar.canonical.com/
-.. _Git: http://git-scm.com/
-.. _Mercurial: http://mercurial.selenic.com/
-.. _available on github: http://github.com/rtfd/readthedocs.org
+At it's heart is an AVR Board (with Arduino Uno bootloader) which runs a series of WS2812B LEDs. These RGB LEDs cross-fade between set colors. For example the Front logic LEDs fade from black to blue to white and back again. As it arrives at each "key" color, that LED is paused for a random length of time - this creates constantly evolving color patterns that appear almost random at first glance.
 
-The main documentation for the site is organized into a couple sections:
+Fiber-optic cable is used to route the light from each LED to specific 'pixels' on the logic bezel, which is what is finally seen on your droid. 
 
-* :ref:`user-docs`
-* :ref:`feature-docs`
-* :ref:`about-docs`
-
-Information about development is also available:
-
-* :ref:`dev-docs`
-* :ref:`design-docs`
-* :ref:`ops-docs`
-
-.. _user-docs:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: User Documentation
-
-   getting_started
-   versions
-   builds
-   features
-   support
-   faq
-   yaml-config
-
-
-.. _feature-docs:
-
-.. toctree::
-   :maxdepth: 2
-   :glob:
-   :caption: Feature Documentation
-
-   webhooks
-   badges
-   alternate_domains
-   localization
-   vcs
-   conda
-   canonical
-   single_version
-   privacy
-   user-defined-redirects
-   automatic-redirects
-   features/*
-
-
-.. _dev-docs:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Developer Documentation
-
-   install
-   changelog
-   contribute
-   tests
-   architecture
-   development/standards
-   development/buildenvironments
-   symlinks
-   settings
-   i18n
-   issue-labels
-
-.. _business-docs:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Business Documentation
-
-   business/index
-
-.. _custom-docs:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Custom Install Documentation
-
-   custom_installs/index
-
-.. _design-docs:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Designer Documentation
-
-   design
-   theme
-
-
-.. _about-docs:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: About Read the Docs
-
-   open-source-philosophy
-   sponsors
-   talks
-
-
-.. _ops-docs:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Operations Documentation
-
-   rtfd
+#Where To Buy?
+========================
+The Logic Engine is supplied in DIY kits that are prepared exclusively for members of the R2 Builders Club. Look in [the 'Other Parts' forum on Astromech.net](http://astromech.net/forums/forumdisplay.php?63) to check current availability.
