@@ -9,6 +9,11 @@ At it's heart is an AVR Board (with Arduino Uno bootloader) which runs a series 
 
 Fiber-optic cable is used to route the light from each LED to specific 'pixels' on the logic bezel, which is what is finally seen on your droid. 
 
-#Where To Buy?
-========================
+Where To Buy?
+---------------
 The Logic Engine is supplied in DIY kits that are prepared exclusively for members of the R2 Builders Club. Look in [the 'Other Parts' forum on Astromech.net](http://astromech.net/forums/forumdisplay.php?63) to check current availability.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Versions
+   versions
