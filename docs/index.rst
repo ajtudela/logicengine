@@ -1,4 +1,4 @@
-Welcome to Read The Docs
+RSeries Lights Module
 ========================
 
 `Read the Docs`_ hosts documentation for the open source community.
